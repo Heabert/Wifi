@@ -20,23 +20,20 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="row">
+    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+        <!--Other form fields above the button-->
 
-            <form class="col s12" >
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate" placeholder='password'>
-                    </div>
-                </div>
-
-                <div class="row">
-                        <div class="input-field col s12">
-                        <input id="email" type="email" class="validate" placeholder='email'>
-                    </div>
-                    <button type='submit' onclick='signUp()' class='btn brn-primary'>Submit</button>
-                </div>
-            </form>
-    </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="col-md-6 col-md-offset-4">
+                <a href="{{ url('/auth/google') }}" class="btn btn-google"><i class="fa fa-google"></i> Google</a>
+                <a href="{{ url('/auth/twitter') }}" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="{{ url('/auth/linkedin') }}" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> Linkedin</a>
+            </div>
+        </div>
+    </form>
 @endsection
 <
 </body>
