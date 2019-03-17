@@ -41,7 +41,7 @@ Route::get('login/linkedin/callback', 'Auth\LoginController@HandleProviderCallba
 //OAuth routes
 Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
-
+Route::post('password/reset','Auth\ResetPasswordController@reset');
 
 
 
