@@ -20,6 +20,11 @@ class ResetPasswordController extends Controller
 
     use ResetsPasswords;
 
+    public function reset(Request $request){
+        $reset = $this->reset($request);
+    }
+
+
     /**
      * Where to redirect users after resetting their password.
      *

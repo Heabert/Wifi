@@ -41,35 +41,35 @@ class LoginController extends Controller
     }
 
     public function redirectToProvider(){
-        return Socialite::driver('twitter')->stateless->redirect();
+        return Socialite::driver('twitter')->redirect();
     }
 
     public function handelProviderCallback(){
-        $user = Socialite::driver('twitter')->stateless->user();
+        $user = Socialite::driver('twitter')->stateless()->user();
     }
 
     public function redirectToProviderOne(){
-        return Socialite::driver('facebook')->stateless->redirect();
+        return Socialite::driver('facebook')->redirect();
     }
 
     public function handelProviderCallbackOne(){
-        $user = Socialite::driver('facebook')->stateless->user();
+        $user = Socialite::driver('facebook')->stateles()->user();
     }
 
     public function redirectToProviderTwo(){
-        return Socialite::driver('google')->stateless->redirect();
+        return Socialite::driver('google')->redirect();
     }
 
     public function handelProviderCallbackTwo(){
-        $user = Socialite::driver('google')->stateless->user();
+        $user = Socialite::driver('google')->stateless()->user();
     }
 
     public function redirectToProviderThree(){
-        return Socialite::driver('linkedin')->stateless->redirect();
+        return Socialite::driver('linkedin')->redirect();
     }
 
     public function handelProviderCallbackThree(){
-        $user = Socialite::driver('linkedin')->stateless->user();
+        $user = Socialite::driver('linkedin')->stateless()->user();
     }
 
 public function username()
