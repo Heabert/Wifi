@@ -19,9 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route :: get('/', function(){
+Route::get('/', function(){
     return view ('Splash');
 });
+
+
+
 
 Route::get('login/twitter', 'Auth\LoginController@redirectToProvider');
 Route::get('login/twitter/callback', 'Auth\LoginController@HandleProviderCallback');
@@ -39,8 +42,8 @@ Route::get('login/linkedin/callback', 'Auth\LoginController@HandleProviderCallba
 
 
 //OAuth routes
-Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
-Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
+Route::get('auth/{twitter}', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/{twitter}/callback', 'Auth\AuthController@HandleProviderCallback');
 Route::post('password/reset','Auth\ResetPasswordController@reset');
 
 

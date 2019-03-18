@@ -139,13 +139,13 @@
 
            <div class="text-center social-btn">
 
-               <a href="{{ url('Auth\LoginController@redirectToProviderOne')}}" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
+               <a href="{{ url('login/facebook')}}" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
 
-               <a href="{{ url('Auth\LoginController@redirectToProvider')}}" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Sign in with <b>Twitter</b></a>
+               <a href="{{ url('login/twitter')}}" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Sign in with <b>Twitter</b></a>
 
-               <a href="{{ url('Auth\LoginController@redirectToProviderTwo')}}" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
+               <a href="{{ url('login/google')}}" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
 
-               <a href="{{ url('Auth\LoginController@redirectToProviderThree')}}" class="btn btn-dark btn-block"><i class="fa fa-linkedin"></i> Sign in with <b>LinkedIn</b></a>
+               <a href="{{ url('login/linkedin')}}" class="btn btn-dark btn-block"><i class="fa fa-linkedin"></i> Sign in with <b>LinkedIn</b></a>
            </div>
 
            <div class="or-seperator"><i>or</i></div>
