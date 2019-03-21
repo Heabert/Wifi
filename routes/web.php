@@ -38,7 +38,7 @@ Route::get('login/facebook', 'Auth\LoginController@redirectToProviderOne');
 Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallbackOne');
 
 Route::get('login/linkedin', 'Auth\LoginController@redirectToProviderThree');
-Route::get('login/linkedin/callback', 'Auth\LoginController@handelProviderCallbackThree');
+Route::get('login/linkedin/callback', 'Auth\LoginController@handleProviderCallbackThree');
 
 
 

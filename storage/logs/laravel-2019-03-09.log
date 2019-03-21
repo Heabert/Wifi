@@ -1,0 +1,42 @@
+[2019-03-09 04:43:34] local.ERROR: substr() expects parameter 1 to be string, array given {"exception":"[object] (ErrorException(code: 0): substr() expects parameter 1 to be string, array given at C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Str.php:489)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'substr() expect...', 'C:\\\\Users\\\\Heabs\\\\...', 489, Array)
+#1 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Str.php(489): substr(Array, 0, 11)
+#2 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(568): Illuminate\\Support\\Str::startsWith(Array, 'Illuminate\\\\')
+#3 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1292): Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Array, 'providers')
+#4 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(569): Illuminate\\Support\\Collection->partition('providers')
+#5 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#6 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(210): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(311): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2019-03-09 04:44:49] local.ERROR: substr() expects parameter 1 to be string, array given {"exception":"[object] (ErrorException(code: 0): substr() expects parameter 1 to be string, array given at C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Str.php:489)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'substr() expect...', 'C:\\\\Users\\\\Heabs\\\\...', 489, Array)
+#1 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Str.php(489): substr(Array, 0, 11)
+#2 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(568): Illuminate\\Support\\Str::startsWith(Array, 'Illuminate\\\\')
+#3 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1292): Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Array, 'providers')
+#4 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(569): Illuminate\\Support\\Collection->partition('providers')
+#5 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#6 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(210): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(311): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2019-03-09 04:45:26] local.ERROR: substr() expects parameter 1 to be string, array given {"exception":"[object] (ErrorException(code: 0): substr() expects parameter 1 to be string, array given at C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Str.php:489)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'substr() expect...', 'C:\\\\Users\\\\Heabs\\\\...', 489, Array)
+#1 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Str.php(489): substr(Array, 0, 11)
+#2 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(568): Illuminate\\Support\\Str::startsWith(Array, 'Illuminate\\\\')
+#3 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1292): Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Array, 'providers')
+#4 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(569): Illuminate\\Support\\Collection->partition('providers')
+#5 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#6 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(210): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(311): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 C:\\Users\\Heabs\\Desktop\\PW\\Wifi\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 

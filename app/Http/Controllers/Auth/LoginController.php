@@ -43,72 +43,79 @@ class LoginController extends Controller
 //TWITTER
     public function redirectToProvider(){
         return Socialite::driver('twitter')->redirect();
-
     }
-    public function handelProviderCallback(){
-        $user = Socialite::driver('twitter')->stateless()->user();
-        $url = "http://twitter.com/api/posts";
-            dd($user);
+    public function handleProviderCallback(){
         $client = new \GuzzleHttp\Client();
-
-        $user = Socialite::driver('twitter')->stateless()->user();
-
-        $url = 'http://twitter.com/api/posts';
+        $user = Socialite::driver('twitter')->redirect();
+       // $url = 'http://twitter.com/api/posts';
+        //dd($user);
 
         $userData = [];
 
-        $userData['fname'] = $user->first_name;
-        $userData['lname'] = $user->last_name;
+        $userData['fname'] = $user->name;
         $userData['email'] = $user->email;
+        $userData['id'] = $user->id;
+        $userData['locationid'] = '1200';
+        $userData['provider'] = 'twitter';
+        $userData['userid'] = '1';
 
-        print_r(array_values($userData));
+        $response = $client->request('POST', 'https://spearwifi.com/api/getData',['data' => $userData]);
+
+        print_r($response);
 
     }
 //FACEBOOK
     public function redirectToProviderOne(){
         return Socialite::driver('facebook')->redirect();
     }
-    public function handelProviderCallbackOne(){
+    public function handleProviderCallbackOne(){
 
-        $user = Socialite::driver('facebook')->stateless()->user();
-        $url = "http://facebook.com/api/posts";
 
         $client = new \GuzzleHttp\Client();
-
         $user = Socialite::driver('facebook')->stateless()->user();
 
-        $url = 'http://facebook.com/api/posts';
+        //$url = "http://facebook.com/api/posts";
+       // dd($user);
 
         $userData = [];
 
-        $userData['fname'] = $user->first_name;
-        $userData['lname'] = $user->last_name;
+        $userData['fname'] = $user->name;
         $userData['email'] = $user->email;
+        $userData['id'] = $user->id;
+        $userData['locationid'] = '1200';
+        $userData['provider'] = 'facebook';
+        $userData['userid'] = '1';
 
-        print_r(array_values($userData));
+
+        $response = $client->request('POST', 'https://spearwifi.com/getData',['data' => $userData]);
+
+      dd($response);
 
     }
 //GOOGLE
     public function redirectToProviderTwo(){
         return Socialite::driver('google')->redirect();
     }
-    public function handelProviderCallbackTwo(){
-        $user = Socialite::driver('google')->stateless()->user();
-        $url = "http://google.com/api/posts";
+    public function handleProviderCallbackTwo(){
 
         $client = new \GuzzleHttp\Client();
-
         $user = Socialite::driver('google')->stateless()->user();
 
-        $url = 'http://google.com/api/posts';
-
+        //$url = "http://google.com/api/posts";
+        //dd($user);
         $userData = [];
 
         $userData['fname'] = $user->first_name;
         $userData['lname'] = $user->last_name;
         $userData['email'] = $user->email;
+        $userData['id'] = $user->id;
+        $userData['locationid'] = '1200';
+        $userData['provider'] = 'google';
+        $userData['userid'] = '1';
 
-        print_r(array_values($userData));
+        $response = $client->request('POST', 'https://spearwifi.com/api/getData',['data' => $userData]);
+
+        print_r($response);
 
 
     }
@@ -116,29 +123,27 @@ class LoginController extends Controller
     public function redirectToProviderThree(){
         return Socialite::driver('linkedin')->redirect();
     }
-    public function handelProviderCallbackThree()
-
+    public function handleProviderCallbackThree()
     {
         $client = new \GuzzleHttp\Client();
-
         $user = Socialite::driver('linkedin')->stateless()->user();
 
-        $url = 'http://linkin.com/api/posts';
+        //$url = 'http://linkin.com/api/posts';
 
         $userData = [];
 
         $userData['fname'] = $user->first_name;
         $userData['lname'] = $user->last_name;
         $userData['email'] = $user->email;
+        $userData['id'] = $user->id;
+        $userData['locationid'] = '1200';
+        $userData['provider'] = 'linkedin';
+        $userData['userid'] = '1';
 
-        print_r(array_values($userData));
 
+        $response = $client->request('POST', 'https://spearwifi.com/api/getData',['data' => $userData]);
 
-        //$request = $client->post($url, ['body' => $userData]);
-
-       // $response = $request->send();
-
-        //dd($response);
+        print_r($response);
     }
 
 
